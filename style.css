@@ -1,0 +1,11 @@
+.quadrado{
+    background-color: blue;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}
+.imagem{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
