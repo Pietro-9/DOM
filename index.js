@@ -1,4 +1,5 @@
 //Atividade 1
+
 let quadrado1 = document.getElementById('quadrado1')
 let quadrado2 = document.getElementById('quadrado2')
 let quadrado3 = document.getElementById('quadrado3')
@@ -17,6 +18,7 @@ function mudardecor(quadrado,cor){
 
 
 }
+
 //Atividade 2
 let clique = document.getElementById('clique')
 let resetar = document.getElementById('resete')
@@ -31,6 +33,7 @@ resetar.addEventListener('click', function resetar(){
     contador = 0
     texto2.innerText = contador 
 })
+
 //Atividade 3
 let texto3 = document.getElementById('texto3')
 let botao = document.getElementById('botao')
@@ -44,6 +47,7 @@ botao.addEventListener('click', function clicar(){
     textovisivel = true  
     }
 })
+
 //Atividade 4
 let botao4 = document.getElementById('botao4')
 let texto4 = document.getElementById('texto4')
@@ -51,11 +55,13 @@ botao4.addEventListener('click', function clicar(){
     let textomudado = prompt('Digite um novo texto')
     texto4.innerText = textomudado
 })
+
 //Atividade 5
 let pressione = document.getElementById('pressione')
 document.addEventListener('keydown', function pressionar(evento){
     pressione.innerText = 'Você pressionou a tecla ' + evento.key
 })
+
 //Atividade 6
 let botao6 = document.getElementById('botao6')
 let foto = document.getElementById('foto')
@@ -128,3 +134,13 @@ botaoconfirmar.addEventListener('click', function confirmar(){
     console.log('Marcelo Pitol: '+votosMarcelo)
     console.log('Voto Nulo: '+votosNulo)
 })
+
+//Desafio
+
+ let botaodesafio = document.getElementById('botaodesafio')
+ let lista = document.getElementById('lista')
+ botaodesafio.addEventListener('click', function adicinaitem(){
+    let adicionar =  prompt('Digite um item')
+    lista.innerHTML += '<li>' +adicionar +'</li>'
+
+ })
